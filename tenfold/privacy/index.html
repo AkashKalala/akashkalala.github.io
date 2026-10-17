@@ -7,9 +7,11 @@
 <meta name="description" content="What Tenfold collects, why, and how to delete it.">
 <style>
 :root {
-  --bg: #0B1622; --surface: #17293C; --raised: #1F374E; --border: #2A4762;
-  --text: #F2F7FC; --muted: #9BB0C4; --faint: #6B839A;
-  --amber: #FFB01F; --danger: #E5484D; --green: #2E9E5B; --blue: #2F72D0;
+  /* Mirrors app/src/theme.ts. The site is the first thing anyone sees and it should
+     not be a different game from the one in the screenshots below it. */
+  --bg: #0B2138; --surface: #0A2038; --raised: #103052; --border: #20496F;
+  --text: #F2F6FA; --muted: #AFC6DC; --faint: #7A94AF;
+  --amber: #FFB01F; --danger: #E5484D; --green: #17904F; --blue: #1F63B8;
 }
 * { box-sizing: border-box; }
 body {
@@ -73,16 +75,15 @@ footer.site a { color: var(--muted); }
   </a>
 </header>
 <h1>Privacy Policy — Tenfold</h1>
-<p><strong>Last updated: 21 August 2026</strong></p>
+<p><strong>Last updated: 17 October 2026</strong></p>
 <p>Tenfold is published by Akash Kalala ("we", "us"). This policy explains what the app
 collects, why, and how to get rid of it.</p>
 <hr />
 <h2>The short version</h2>
 <p>Tenfold has <strong>no database</strong>. We do not build a profile of you, we do not sell anything
 about you, and there are no advertising trackers in the app.</p>
-<p>There is one exception to "we collect nothing", and we would rather state it up front than
-bury it: <strong>if the app crashes, we send a crash report.</strong> Details in "Crash reports" below,
-including how to turn it off.</p>
+<p>Playing offline, nothing leaves your phone at all. Playing online needs an account and our
+game server - "What we collect" below says exactly what that involves.</p>
 <h2>What we collect</h2>
 <p><strong>If you play offline against the computer:</strong> nothing. No account, no network, no data
 leaves your device.</p>
@@ -119,29 +120,21 @@ leaves your device.</p>
 </tbody>
 </table>
 <p><strong>If you sign in with Google or Apple</strong>, we receive a signed token from them containing a
-user identifier and display name, and (from Google) a profile picture URL. We verify that
-token, then issue our own session token. <strong>We never see or receive your password</strong>, and we
+user identifier, your display name, your email address and (from Google) a profile picture
+URL. We verify that token and read the identifier, name and picture from it - <strong>we do not
+store your email address</strong> - then issue our own session token. <strong>We never see or receive your password</strong>, and we
 do not receive your contacts, calendar, photos or any other account data.</p>
 <p><strong>Guest accounts</strong> are a random identifier generated on the spot. They are tied to your
 device and are lost if you reinstall.</p>
 <h2>Crash reports</h2>
-<p>If the app crashes, we send a report so the fault can be found and fixed. Without it a
-crash affecting one phone model is invisible to us — we would only learn about it from a
-review, with nothing to act on.</p>
-<p><strong>What a crash report contains:</strong> the error and the code path that produced it, your device
-model, operating system version and the app version.</p>
-<p><strong>What it does not contain:</strong> your name, your account, your email, your cards, or anything
-about how you play. We explicitly disable the collection of personal information, and strip
-the user record and IP address from every report before it is sent.</p>
-<p>Reports are processed by <strong>Sentry</strong> (Functional Software, Inc.) acting on our behalf, and
-are retained for 90 days.</p>
-<p><strong>Turning it off:</strong> Settings → Crash reports → <em>Stop sending crash reports</em>. It takes effect
-immediately, not at next launch.</p>
+<p>The app does not currently include a crash reporter, and sends no crash data anywhere. If
+one is added in a future version, this section will describe what it sends - and how to
+turn it off - before that version is released.</p>
 <h2>What we do not collect</h2>
 <ul>
 <li>No advertising identifiers, and no advertising SDKs</li>
-<li>No analytics, behavioural tracking, session recording or performance profiling —
-  crash reports fire only when something breaks, never during normal play</li>
+<li>No analytics, behavioural tracking, session recording, performance profiling or crash
+  reporting</li>
 <li>No location data</li>
 <li>No contacts, photos, microphone or camera access</li>
 <li>No payment information — the app has no purchases</li>
@@ -157,9 +150,6 @@ disk.</p>
 <ul>
 <li><strong>Google</strong> and <strong>Apple</strong>, if you choose to sign in with them. Their handling is governed
   by their own privacy policies.</li>
-<li><strong>Sentry</strong> (Functional Software, Inc.), which receives crash reports unless you turn them
-  off. It is a data processor acting on our instructions and does not use the data for its
-  own purposes.</li>
 <li>Our server is hosted by a cloud provider, which necessarily processes the network
   traffic between your device and us.</li>
 </ul>

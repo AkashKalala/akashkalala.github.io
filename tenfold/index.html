@@ -7,9 +7,11 @@
 <meta name="description" content="Tenfold — a contract-rummy card game.">
 <style>
 :root {
-  --bg: #0B1622; --surface: #17293C; --raised: #1F374E; --border: #2A4762;
-  --text: #F2F7FC; --muted: #9BB0C4; --faint: #6B839A;
-  --amber: #FFB01F; --danger: #E5484D; --green: #2E9E5B; --blue: #2F72D0;
+  /* Mirrors app/src/theme.ts. The site is the first thing anyone sees and it should
+     not be a different game from the one in the screenshots below it. */
+  --bg: #0B2138; --surface: #0A2038; --raised: #103052; --border: #20496F;
+  --text: #F2F6FA; --muted: #AFC6DC; --faint: #7A94AF;
+  --amber: #FFB01F; --danger: #E5484D; --green: #17904F; --blue: #1F63B8;
 }
 * { box-sizing: border-box; }
 body {
@@ -86,7 +88,8 @@ footer.site a { color: var(--muted); }
 </div>
 
 <p>Tenfold is an original contract-rummy game. Play offline against the computer with no
-   account at all, or online in a private room with friends.</p>
+   account at all, or online with friends in a private room - sign in with Google, or play
+   as a guest.</p>
 
 <footer class="site">
   <p>
