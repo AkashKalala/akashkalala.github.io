@@ -85,37 +85,38 @@ footer.site a { color: var(--muted); }
     <li>Go to <strong>Settings</strong>.</li>
     <li>Scroll to <strong>Delete my account</strong> and confirm.</li>
   </ol>
-  <p>Your account and everything associated with it are removed straight away. If you are
-     in the middle of a game, a computer player takes over the hand for the other players
-     and your name is removed from it.</p>
+  <p>Your account and everything associated with it are removed straight away, and you
+     disappear from your friends' lists. If you are in the middle of a game, a computer
+     player takes over the hand for the other players and your name is removed from it.</p>
 </div>
 
 <div class="card">
   <h2>By email &mdash; if you no longer have the app</h2>
   <p>If you have already uninstalled Tenfold, email us from any address and tell us the
-     <strong>display name</strong> you played under and roughly <strong>when</strong> you
-     last played, so we can identify the account.</p>
+     <strong>display name</strong> you played under, your <strong>friend code</strong> if
+     you know it (it starts <strong>TF-</strong>), and roughly <strong>when</strong> you last
+     played. We do not store email addresses, so these are how we find the account.</p>
   <p><a class="btn" href="mailto:akashkalala123@gmail.com?subject=Delete%20my%20Tenfold%20account">
      Email akashkalala123@gmail.com</a></p>
   <p class="muted">We action deletion requests within 30 days, and usually the same week.</p>
 </div>
 
 <h2>What gets deleted</h2>
-<p>Everything. Your account identifier, your display name, and any room or game state
-   holding them.</p>
+<p>Everything: your account identifier, display name and profile picture link, your friend
+   code, your friends list and friend requests, your saved progress (coins, diamonds,
+   unlocks, achievements and statistics), and any room or game state holding them.</p>
 
 <h2>What we keep, and for how long</h2>
-<p>Nothing that identifies you. Tenfold runs <strong>no database</strong> &mdash; room and
-   game data lives only in server memory and is gone when the room closes or the server
-   restarts, so there is no archive or backup copy to purge afterwards.</p>
-<p>The one exception is <strong>crash reports</strong>, if you left them enabled. Those are
-   stripped of any user record and IP address before they are sent, so they cannot be
-   traced back to you, and they are deleted after 90 days. You can turn crash reports off
-   at any time in <strong>Settings &rarr; Crash reports</strong>.</p>
+<p>Nothing. Deleted records leave the live database immediately. Our database provider keeps
+   short-lived recovery copies for operational safety; they expire on their own within
+   7 days and we never restore a deleted account from them.</p>
+<p>The app has no crash reporter, analytics or advertising, so there is no other copy
+   anywhere to purge.</p>
 
-<h2>Playing offline</h2>
-<p>If you only ever played against the computer, there is nothing to delete &mdash; no
-   account was created and nothing left your device.</p>
+<h2>Guests and offline play</h2>
+<p>If you only ever played against the computer, or online as a guest, there is nothing to
+   delete on our side &mdash; nothing about you was stored. Uninstalling the app removes
+   what was on your phone.</p>
 
 <p class="muted">See the <a href="../privacy/">privacy policy</a> for the full detail.</p>
 
